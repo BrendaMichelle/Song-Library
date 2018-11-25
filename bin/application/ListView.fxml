@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Coders: Brenda M. Rios (NetID: bmr111) & Roy Jacome (NetID: roj5) -->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="531.0" prefWidth="705.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ListViewController">
+   <children>
+      <ListView fx:id="listView" layoutX="13.0" layoutY="38.0" onKeyPressed="#handleArrowButtons" onMouseClicked="#handleMouseClick" prefHeight="290.0" prefWidth="274.0" />
+      <Button fx:id="addButton" layoutX="287.0" layoutY="171.0" mnemonicParsing="false" onAction="#buttonPressed" text="&lt;&lt;Add New Song&lt;&lt;" />
+      <Button fx:id="editButton" layoutX="131.0" layoutY="498.0" mnemonicParsing="false" onAction="#buttonPressed" text="^^Edit Selected Song^^" />
+      <Button fx:id="deleteButton" layoutX="350.0" layoutY="411.0" mnemonicParsing="false" onAction="#buttonPressed" text="Delete Selected Song" />
+      <Text layoutX="27.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selected Song Details:" />
+      <Text layoutX="31.0" layoutY="374.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Song:" />
+      <Text layoutX="29.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Artist:" />
+      <Text layoutX="27.0" layoutY="443.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Album:" />
+      <Text layoutX="31.0" layoutY="480.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Year:" />
+      <Separator layoutX="-1.0" layoutY="344.0" prefHeight="17.0" prefWidth="333.0" />
+      <Separator layoutX="-1.0" layoutY="490.0" prefHeight="5.0" prefWidth="333.0" />
+      <Separator layoutX="331.0" layoutY="351.0" orientation="VERTICAL" prefHeight="140.0" />
+      <Text layoutX="12.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Song Name" />
+      <Text layoutX="165.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Artist" />
+      <TextField fx:id="songDetails" layoutX="108.0" layoutY="356.0" prefHeight="27.0" prefWidth="211.0" />
+      <TextField fx:id="artistDetails" layoutX="108.0" layoutY="390.0" prefHeight="27.0" prefWidth="211.0" />
+      <TextField fx:id="albumDetails" layoutX="108.0" layoutY="425.0" prefHeight="27.0" prefWidth="211.0" />
+      <TextField fx:id="yearDateDetails" layoutX="108.0" layoutY="461.0" prefHeight="27.0" prefWidth="210.0" />
+      <Text layoutX="489.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Song Name" underline="true" />
+      <TextField fx:id="newSong" layoutX="439.0" layoutY="72.0" prefHeight="27.0" prefWidth="204.0" promptText="REQUIRED" />
+      <TextField fx:id="newArtist" layoutX="441.0" layoutY="150.0" prefHeight="27.0" prefWidth="204.0" promptText="REQUIRED" />
+      <TextField fx:id="newAlbum" layoutX="442.0" layoutY="221.0" prefHeight="27.0" prefWidth="204.0" promptText="OPTIONAL" />
+      <Text layoutX="489.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Artist Name" underline="true" />
+      <TextField fx:id="newYearDate" layoutX="442.0" layoutY="292.0" prefHeight="27.0" prefWidth="204.0" promptText="OPTIONAL" />
+      <Text layoutX="489.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Album Name" underline="true" />
+      <Text layoutX="489.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Year Date" underline="true" />
+      <Separator layoutX="431.0" layoutY="35.0" prefWidth="232.0" />
+      <Separator layoutX="429.0" layoutY="36.0" orientation="VERTICAL" prefHeight="308.0" prefWidth="0.0" />
+      <Separator layoutX="430.0" layoutY="342.0" prefWidth="231.0" />
+      <Separator layoutX="660.0" layoutY="35.0" orientation="VERTICAL" prefHeight="308.0" prefWidth="6.0" />
+      <Text layoutX="489.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Track Input:" />
+      <Text layoutX="114.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":" />
+      <Separator layoutX="287.0" layoutY="131.0" prefHeight="6.0" prefWidth="143.0" />
+      <Separator layoutX="287.0" layoutY="233.0" prefWidth="143.0" />
+      <Separator layoutX="333.0" layoutY="418.0" prefWidth="17.0" />
+      <Separator layoutX="333.0" layoutY="429.0" prefWidth="17.0" />
+   </children>
+</AnchorPane>
